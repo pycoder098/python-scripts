@@ -15,7 +15,7 @@ img_tags = soup.find_all('img')
 
 urls = [img['src'] for img in img_tags]
 filenames = []
-print(urls)
+
 try:
     os.system("mkdir images")
 except:
