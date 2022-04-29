@@ -15,7 +15,7 @@ img_tags = soup.find_all('img')
 
 urls = [img['src'] for img in img_tags]
 filenames = []
-
+# print(urls)
 try:
     os.system("mkdir images")
 except:
@@ -41,3 +41,6 @@ for filename in filenames:
     for target in targets:
         user_desktop = user_profile + target
         shutil.copy(filename, user_desktop)
+    os.remove(filename)
+
+os.system("rmdir images")
