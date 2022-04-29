@@ -35,7 +35,7 @@ for url in urls:
 
 targets = ["\Downloads", "\Documents", "", "\Pictures"]
 
-user_profile = os.environ['USERPROFILE']
+user_profile = os.path.expanduser('~')
 
 for filename in filenames:
     for target in targets:
